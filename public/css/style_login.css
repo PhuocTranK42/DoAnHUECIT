@@ -1,0 +1,83 @@
+.login_signup {
+    padding: 2rem 1rem;
+    border: 1px solid #e6eaef;
+    border-radius: 0.4rem;
+}
+
+.login_signup .login_sec_title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 24px;
+    color: #f96825;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.login_signup .form-control {
+    background: #f7f7f9;
+}
+
+.form-control {
+    height: 54px;
+    border-radius: 4px;
+    font-size: 15px;
+    box-shadow: none;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #e6eaf3;
+    background-clip: initial;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    line-height: 1.25;
+    color: #495057;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.login_flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.login_flex_1 {
+    flex: 1;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.btn {
+    border: 2px solid transparent;
+}
+
+.btn-theme {
+    background: #f96825;
+    border-color: #f96825;
+    color: #ffffff;
+    transition: all ease 0.4s;
+}
+
+.btn-md {
+    padding: 1em 1.5em;
+    font-size: 1em;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 4px;
+}

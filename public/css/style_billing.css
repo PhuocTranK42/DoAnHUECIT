@@ -1,0 +1,30 @@
+.customs-control-label {
+    position: relative;
+    margin-bottom: 0;
+    color: #767676;
+    vertical-align: top;
+    padding-left: 2rem;
+}
+
+.custom-control-input {
+    z-index: -1;
+    width: 1.125rem;
+    height: 1.3125rem;
+    opacity: 0;
+}
+
+.list-group-item {
+    border: 1px solid #e0e4ec;
+}
+
+.custom-control-label img {
+    max-width: 70px;
+}
+
+.list-group-sm .list-group-item {
+    padding: 1.25rem 1.25rem;
+}
+
+.btn {
+    color: #000 !important;
+}

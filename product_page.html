@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/css/style_category.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/style_product.css">
+    <link rel="stylesheet" href="./public/css/style_home.css">
+    <link rel="stylesheet" href="./public/css/style_login.css">
+    <title>Odex - Organic Food & Grocery Market HTML Template</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <!-- Header -->
+            <div class="header">
+                <div class="general_header">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="header__top">
+                                <a href="home_page.html" class="header__logo">
+                                    <img src="./public/image/furniture-logo.png" alt="">
+                                </a>
+                            </div>
+                            <nav class="navbar navbar-expand-lg navbar-light justify-content-center "
+                                style="font-size: 20px; padding: 0.75rem 1.5rem;">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Trang chủ <span
+                                                    class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                Sản phẩm
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#"
+                                                    style="color:#000 !important;"><b>Nệm</b></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="dropdown-item"
+                                                            style="color:#555 !important;">Siêu
+                                                            nhẹ</a>
+                                                        <a href="#" class="dropdown-item"
+                                                            style="color:#555 !important;">Bông ép</a>
+                                                        <a href="#" class="dropdown-item"
+                                                            style="color:#555 !important;">Eva</a>
+                                                        <a href="#" class="dropdown-item"
+                                                            style="color:#555 !important;">Nệm lò
+                                                            xo</a>
+                                                    </li>
+                                                </ul>
+                                                <a class="dropdown-item" href="#"
+                                                    style="color:#000 !important;"><b>Mùng</b></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="dropdown-item"
+                                                            style="color:#555 !important;">Mùng rẻ</a>
+                                                        <a href="#" class="dropdown-item"
+                                                            style="color:#555 !important;">Mùng
+                                                            thường</a>
+                                                        <a href="#" class="dropdown-item"
+                                                            style="color:#555 !important;">Mùng công
+                                                            ty</a>
+                                                        <a href="#" class="dropdown-item"
+                                                            style="color:#555 !important;">Mùng
+                                                            khác</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button type="submit" style="border:none; background:none;">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </nav>
+                            <div class="general_head_right">
+                                <ul>
+                                    <!-- <li>
+                                        <a href="#">
+                                            <button type="submit">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </a>
+                                    </li> -->
+                                    <li>
+                                        <a href="#">
+                                            <button type="submit">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <button type="submit">
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banner -->
+            <div class="banner dark">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="text-center">
+                                <h2 class="banner__content">Nuetrick Fresh Pineapple</h2>
+                                <div class="banner__menu">
+                                    <ul class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="home_page.html">
+                                                <i class="fa fa-home"></i>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <a href="addcart_page.html">
+                                                Nệm
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <a href="addcart_page.html">
+                                                Nệm 10F
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item active">
+                                            <a href="addcart_page.html">
+                                                Nuetrick Fresh Pineapple
+                                            </a>
+                                        </li>
+                                        <!-- <li class="breadcrumb-item">
+                                            <a href="register_page.html">
+                                                Register
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item active">
+                                            <a href="login_page.html">
+                                                Login
+                                            </a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="sp-wrap sp-non-touch">
+                                <div class="sp-large">
+                                    <a href="#">
+                                        <img src="./public/image/1.png" class="sp-current-big" alt="">
+                                    </a>
+                                </div>
+                                <div class="sp-thumbs sp-tb-active">
+                                    <a href="#" style="background-image:url(./public/image/2.png);" class="sp-current">
+                                    </a>
+                                    <a href="#" style="background-image:url(./public/image/3.png);">
+                                    </a>
+                                    <a href="#" style="background-image:url(./public/image/4.png);">
+                                    </a>
+                                    <a href="#" style="background-image:url(./public/image/5.png);">
+                                    </a>
+                                    <a href="#" style="background-image:url(./public/image/6.png);">
+                                    </a>
+                                    <a href="#" style="background-image:url(./public/image/7.png);">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="woo_pr_detail">
+                                <div class="woo_cats_wrps">
+                                    <a href="#" class="woo_pr_cats">Fresh Fruits</a>
+                                    <span class="woo_pr_trending">Trending</span>
+                                </div>
+                                <h2 class="woo_pr_title">Nuetrick Fresh Pineapple</h2>
+                                <div class="woo_pr_reviews">
+                                    <div class="woo_pr_rating">
+                                        <i class="fa fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="woo_pr_total_reviews">
+                                        <a href="#">(124 Reviews)</a>
+                                    </div>
+                                </div>
+                                <div class="woo_pr_short_desc">
+                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                                        quia consequuntur magni dolores voluptatem quia voluptas sit aspernatur.</p>
+                                </div>
+                                <div class="woo_pr_price">
+                                    <div class="woo_pr_offer_price">
+                                        <h3>$149.00
+                                            <span class="org_price">$199</span>
+                                        </h3>
+                                    </div>
+                                    <div class="woo_offer_box">
+                                        <div class="woo_off_text">
+                                            <h4>40%
+                                                <span>Off</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pr_info_prefix grocery_style mb-3">
+                                    <!-- First -->
+                                    <div class="cart_sku_preflix">
+                                        <div class="sku_preflix_first">
+                                            <strong>SKU:</strong>
+                                        </div>
+                                        <div class="sku_preflix_last">
+                                            HSQ4768987
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="woo_btn_action">
+                                    <div class="col-12 col-lg-auto">
+                                        <input type="number" class="form-control qua_pr mb-2" value="1">
+                                    </div>
+                                    <div class="col-12 col-lg-auto">
+                                        <button class="btn btn-block btn-dark mb-2" type="submit">Add to Cart
+                                            <i class="fa fa-shopping-cart ml-2"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-12 col-lg-auto">
+                                        <button class="btn btn-gray btn-block mb-2">
+                                            Wishlist
+                                            <i class="fa fa-heart ml-2"></i>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-12 col-md-12">
+                            <!-- <div class="custom-tab style-1">
+                                <p>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1"
+                                        role="button" aria-expanded="false" aria-controls="collapseExample1">
+                                        Additional Information
+                                    </a>
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2"
+                                        role="button" aria-expanded="false" aria-controls="collapseExample2">
+                                        Reviews
+                                    </a>
+                                </p>
+                                <div class="collapse" id="collapseExample1">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna a
+                                        ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in tortor.
+                                        Proin accumsan felis ac felis dapibus, non iaculis mi varius.</p>
+                                    <div class="product_meta">
+                                        <span class="sku_wrapper">
+                                            SKU:
+                                            <span class="sku">001</span>
+                                        </span>
+                                    </div>
+                                    <div class="posted_in">
+                                        <a href="#">Chair</a>,
+                                        <a href="#">Wood</a>
+                                    </div>
+                                    <div class="tagged_as">
+                                        <a href="#">Chair</a>,
+                                        <a href="#">Furniture</a>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapseExample2">
+                                    <div class="review-wrapper">
+                                        <div class="review-wrapper-header">
+                                            <h4>24 Reviews</h4>
+                                        </div>
+                                        <div class="review-wrapper-body">
+                                            <ul class="review-list">
+                                                <li>
+                                                    <div class="reviews-box">
+                                                        <div class="review-box">
+                                                            <div class="review-avatar">
+                                                                <img src="./public/image/user-3.jpg"
+                                                                    class="avatar avatar-140 photo" alt="">
+                                                            </div>
+                                                            <div class="review-content">
+                                                                <div class="review-info">
+                                                                    <div class="review-comment">
+                                                                        <div class="review-author">
+
+                                                                            Cole Harris
+
+                                                                        </div>
+                                                                        <div class="review-comment-stars">
+                                                                            <i class="fa fa-star filled"></i>
+                                                                            <i class="fa fa-star filled"></i>
+                                                                            <i class="fa fa-star filled"></i>
+                                                                            <i class="fa fa-star filled"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="review-comment-date">
+                                                                        <div class="review-date">
+                                                                            <span>4 weeks ago</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <p>
+                                                                    At Vero Eos Et Accusamus Et Iusto Odio Dignissimos
+                                                                    Ducimus Qui Blanditiis Praesentium Voluptatum
+                                                                    Deleniti Atque Corrupti Quos Dolores Et Quas
+                                                                    Molestias Excepturi Sint Occaecati Cupiditate Non
+                                                                    Provident.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="review-wrapper">
+                                        <div class="review-wrapper-header">
+                                            <h4>Rate &amp; Write Reviews</h4>
+                                        </div>
+                                        <div class="review-wrapper-body">
+
+                                            <div class="row mb-3">
+                                                <div class="col-md-12">
+                                                    <div class="rating-opt">
+                                                        <i class="fa fa-star filled"></i>
+                                                        <i class="fa fa-star filled"></i>
+                                                        <i class="fa fa-star filled"></i>
+                                                        <i class="fa fa-star filled"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 form-group">
+                                                    <input type="text" class="form-control" placeholder="Your Name*">
+                                                </div>
+                                                <div class="col-sm-6 form-group">
+                                                    <input type="email" class="form-control"
+                                                        placeholder="Email Address*">
+                                                </div>
+                                                <div class="col-sm-12 form-group">
+                                                    <textarea class="form-control height-110"
+                                                        placeholder="Tell us your experience..."></textarea>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <button type="button" class="btn btn-primary">Submit your
+                                                        review</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 mb-2">
+                            <h4 class="mb-0">Related Products</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="owl-carousel products-slider owl-theme owl-loaded owl-drag">
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage"
+                                        style="transform: translate3d(0px, 0px, 0px);transition: all 0s ease 0s;width: 2360px;">
+                                        <div class="owl-item active" style="width: 285px; margin-right: 10px;">
+                                            <div class="item">
+                                                <div class="woo_product_grid">
+                                                    <span class="woo_pr_tag hot">
+                                                        Hot
+                                                    </span>
+                                                    <div class="woo_product_thumb">
+                                                        <img src="./public/image/10.png" class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="woo_product_caption center">
+                                                        <div class="woo_rate">
+                                                            <i class="fa fa-star filled"></i>
+                                                            <i class="fa fa-star filled"></i>
+                                                            <i class="fa fa-star filled"></i>
+                                                            <i class="fa fa-star filled"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                        <div class="woo_title">
+                                                            <h4 class="woo_pro_title">
+                                                                <a href="#">Accumsan Tree Fusce</a>
+                                                            </h4>
+                                                        </div>
+                                                        <div class="woo_price">
+                                                            <h6>
+                                                                $72.47
+                                                                <span class="less_price">$112.10</span>
+                                                            </h6>
+                                                        </div>
+                                                        <div class="about__item-content">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" class="woo_cart_btn btn_cart">
+                                                                        <i class="fa fa-eye"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="woo_cart_btn btn_view"
+                                                                        style="background: #ffd8d0; color: #ff765a;">
+                                                                        <i class="fa fa-shopping-cart"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="woo_cart_btn btn_save"
+                                                                        style="background: #c4ecff; color: #03A9F5;">
+                                                                        <i class="fa fa-heart"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- <a class="btn btn--primary">
+                                                            Add Cad
+                                                        </a> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="theme-bg call_action_wrap-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="call_action_wrap">
+                                <div class="call_action_wrap-head">
+                                    <h3>Do You Have Questions ?</h3>
+                                    <p>We'll help you to grow your career and growth.</p>
+                                </div>
+                                <div class="newsletter_box">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Subscribe here...">
+                                        <!-- <button class="btn search_btn" type="button">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer class="dark-footer skin-dark-footer style-2">
+                <div class="footer-middle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="footer_widget">
+                                    <h6 class="extream">Contact us</h6>
+                                    <p>Let's here all about it! <a href="#" class="theme-cl">Get it touch</a></p>
+                                    <div class="address_infos">
+                                        <ul style="padding: 0;">
+                                            <li>
+                                                <i class="fa fa-home theme-cl"></i> #302 Brick Market, Jalsa
+                                                California<br>United State HQS1130
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-phone"></i> (41) 254 758 4572
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="footer_widget">
+                                    <h6 class="extream">Categories</h6>
+                                    <div class="address_infos">
+                                        <ul style="padding: 0;">
+                                            <li>
+                                                <a href="#">Organic</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Grocery</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Education</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Furniture</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="footer_widget">
+                                    <h6 class="extream">Our Company</h6>
+                                    <div class="address_infos">
+                                        <ul style="padding: 0;">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">My company</a></li>
+                                            <li><a href="#">Our Studio</a></li>
+                                            <li><a href="#">Nightlife</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="footer_widget">
+                                    <h6 class="extream">Latest News</h6>
+                                    <div class="address_infos">
+                                        <ul style="padding: 0;">
+                                            <li><a href="#">Offers & Deals</a></li>
+                                            <li><a href="#">My Account</a></li>
+                                            <li><a href="#">My Products</a></li>
+                                            <li><a href="#">Favorites</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="footer_widget">
+                                    <h6 class="extream">Customer Support</h6>
+                                    <div class="address_infos">
+                                        <ul style="padding: 0;">
+                                            <li><a href="#">Conditions</a></li>
+                                            <li><a href="#">Privacy</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">FAQs</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
